@@ -111,8 +111,7 @@ img {
     gap: 40px;
 }
 
-.nav-list-item {
-}
+.nav-list-item {}
 
 .nav-link {
     display: block;
@@ -181,7 +180,7 @@ img {
     margin: 0 auto;
     margin-bottom: 48px;
 }
- 
+
 .button-hero {
     border: none;
     color: #FFFFFF;
@@ -200,7 +199,7 @@ img {
 
 .button-hero:hover,
 .button-hero:focus,
-.button-hero:active{
+.button-hero:active {
     background-color: #404bbf;
 }
 
@@ -263,9 +262,8 @@ img {
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px;
     width: 264px;
-    height: 380px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-content-wrapper {
@@ -280,6 +278,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-item-description {
@@ -309,13 +308,19 @@ img {
     display: flex;
     column-gap: 24px;
     row-gap: 48px;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 
 .portfolio-list-item {
     width: 360px;
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus,
+.portfolio-list-item:after {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);;
+    transition-delay: 250ms;
 }
 
 .portfolio-list-image {}
