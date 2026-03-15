@@ -162,7 +162,13 @@ img {
 /* #region hero */
 
 .section-hero {
-    background: #2E2F42;
+    /* background: #2E2F42; */
+    background-color: #F4F4FD;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-pg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .section-hero .container {
@@ -354,6 +360,15 @@ img {
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-information {
+    width: 264px;
+}
+
 .footer-logo {
     margin-bottom: 16px;
 }
@@ -375,4 +390,22 @@ img {
     max-width: 264px;
 }
 
+.footer-social {
+    width: 208px;
+}
+
+.footer-social-description {
+    color: #FFFFFF;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    color: #FFFFFF;
+}
 /* #endregion footer */
