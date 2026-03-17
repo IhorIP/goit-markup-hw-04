@@ -81,6 +81,10 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -191,6 +195,7 @@ img {
     url(../images/hero-pg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .section-hero .container {
@@ -223,6 +228,7 @@ img {
     height: 56px; */
   display: block;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -346,7 +352,6 @@ img {
 }
 
 .team-social-item {
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -356,6 +361,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -399,9 +405,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus,
-.portfolio-list-item:after {
+.portfolio-list-item:hover {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -411,6 +415,13 @@ img {
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-thumb {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-image {
@@ -434,7 +445,7 @@ img {
   background: #4d5ae5;
 }
 
-.portfolio-thumb:hover .overlay {
+.portfolio-list-item:hover .overlay {
   transform: translateY(0);
 }
 
@@ -518,7 +529,6 @@ img {
 }
 
 .footer-social-item {
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -528,6 +538,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   border-radius: 50%;
